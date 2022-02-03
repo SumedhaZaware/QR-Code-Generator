@@ -21,21 +21,20 @@ def save_qr():
 
     text = tk.Label(root,text='QR Code generated and saved!!',bg="#ECD6D1")
     text.place(x=70,y=120)
-    text.config(font=('Helvatical bold',10))
+    text.config(font=('Helvatical',10))
 
 # Link label
 link_label = tk.Label(root, text="Enter link or text:" ,bg="#ECD6D1")
 link_label.place(x=20, y=20)
-link_label.config(font=('Helvatical bold',16))
+link_label.config(font=('calibri',14))
 
 # Link or text entry
 link_entry = tk.Entry(root)
-link_entry.place(x=70, y=40)
+link_entry.place(x=70, y=44)
 link_entry.config(font=('Helvatical bold',12))
 
 # Button to generate QR code
-# , fg="white",bg='black',padx=2
 generate_button = tk.Button(root, text ="Generate QR Code", command = save_qr)
-generate_button.place(x=120,y=80)
+generate_button.place(x=100,y=80)
 
 root.mainloop()
